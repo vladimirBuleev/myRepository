@@ -22,5 +22,11 @@ public class Tests {
         assertEquals("Seven",testMovie.getMovieName());
         assertEquals(127,testMovie.getRunningTime());
         assertEquals("David Fincher",testMovie.getFilmDirector());
+
+        Calculator testCalc = new Calculator(10,5);
+        assertEquals(15,testCalc.add());
+        assertEquals(5,testCalc.sub());
+        assertEquals(50,testCalc.mult());
+        assertEquals(2,testCalc.division());
     }
 }
