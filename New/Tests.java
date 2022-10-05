@@ -28,5 +28,20 @@ public class Tests {
         assertEquals(5,testCalc.sub());
         assertEquals(50,testCalc.mult());
         assertEquals(2,testCalc.division());
+
+        Matrix testMatrix = new Matrix(3,3);
+        int[][] array = {
+                {1, 2, 4},
+                {2, 0, 5},
+                {3, 8, 2}
+        };
+        testMatrix.setArrayValue(2,2,10);
+        assertEquals(10,testMatrix.getArrayValue(2,2));
+        testMatrix.addAnotherArray(array);
+        assertEquals(12,testMatrix.getArrayValue(2,2));
+        testMatrix.multiplyAnotherArray(array);
+        assertEquals(24,testMatrix.getArrayValue(2,2));
+
+
     }
 }
