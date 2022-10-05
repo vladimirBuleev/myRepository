@@ -11,5 +11,11 @@ public class Tests {
         assertEquals("Buleev",testHuman.getSurName());
         assertEquals("Vladimir",testHuman.getName());
         assertEquals("Dmitrievich",testHuman.getMiddleName());
+
+        Book testBook= new Book("The Witcher",1896,1986,"Sapkovsky");
+        assertEquals("The Witcher", testBook.getBookName());
+        assertEquals(1896,testBook.getPageAmount());
+        assertEquals(1986,testBook.getPublicationYear());
+        assertEquals("Sapkovsky",testBook.getAuthorName());
     }
 }
