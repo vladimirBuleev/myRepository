@@ -42,6 +42,7 @@ public class Tests {
         testMatrix.multiplyAnotherArray(array);
         assertEquals(24,testMatrix.getArrayValue(2,2));
 
-
+        HowMuchSpaceInSentence testCount = new HowMuchSpaceInSentence("Это предложение для теста");
+        assertEquals(3,testCount.amountSpaces());
     }
 }
