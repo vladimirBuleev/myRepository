@@ -17,5 +17,10 @@ public class Tests {
         assertEquals(1896,testBook.getPageAmount());
         assertEquals(1986,testBook.getPublicationYear());
         assertEquals("Sapkovsky",testBook.getAuthorName());
+
+        Movie testMovie= new Movie("Seven",127,"David Fincher");
+        assertEquals("Seven",testMovie.getMovieName());
+        assertEquals(127,testMovie.getRunningTime());
+        assertEquals("David Fincher",testMovie.getFilmDirector());
     }
 }
